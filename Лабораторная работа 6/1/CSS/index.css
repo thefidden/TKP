@@ -1,0 +1,32 @@
+body {
+    font-family: Inter, serif;
+}
+
+.Button {
+    background-color: #555555;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid black;
+    padding: 15px 32px;
+    display: inline-block;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-family: Inter, serif;
+    margin-right: 25px;
+}
+.Button:hover {
+    background-color: white;
+    color: black;
+}
+
+.Buttons {
+    margin-bottom: 20px;
+}
+
+.Text {
+    font-family: Inter, serif;
+    color: black;
+    font-size: 25px
+}

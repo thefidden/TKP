@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Task 3</title>
+</head>
+<body>
+    <script type = "text/javascript">
+        function drawRectangle(rectangleHeight, rectangleWidth) {
+            let rectangle = []
+
+            for (let line = 0; line < rectangleHeight; ++line)
+                rectangle.push('*'.repeat(rectangleWidth))
+
+            for (let line of rectangle)
+                document.writeln(line + '<br>')
+        }
+
+        function drawRectangularTriangle(lines) {
+            let triangle = []
+
+            for(let line = 1; line < lines; ++line)
+                triangle.push('*'.repeat(line))
+
+            for(let line of triangle)
+                document.writeln(line + '<br>')
+        }
+
+        function drawEquilateralTriangle(lines) {
+            let triangle = []
+
+            for(let line = 1; line <= lines; ++line)
+                triangle.push('\xa0\xa0'.repeat(lines - line) + '*'.repeat(line * 2 - 1))
+
+            for(let line of triangle)
+                document.writeln(line + '<br>')
+        }
+
+        function drawRhombus(lines) {
+            let rhombus = []
+
+            for(let line = 1; line * 2 - 1 <= lines; ++line)
+                rhombus.push('\xa0\xa0'.repeat(lines - line) + '*'.repeat(line * 2 - 1))
+
+            for(let line of [...rhombus].reverse().slice(1))
+                rhombus.push(line)
+
+            for(let line of rhombus)
+                document.writeln(line + '<br>')
+        }
+
+        document.writeln('<strong>Прямоугольник<br>')
+        drawRectangle(9, 32)
+
+        document.writeln('<br><strong>Прямоугольный треугольник<br>')
+        drawRectangularTriangle(10)
+
+        document.writeln('<br><strong>Равносторонний треугольник<br>')
+        drawEquilateralTriangle(10)
+
+        document.writeln('<br><strong>Ромб<br>')
+        drawRhombus(11)
+    </script>
+</body>
+</html>

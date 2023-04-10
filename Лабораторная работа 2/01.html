@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Task 1</title>
+</head>
+<body>
+    <script type = "text/javascript">
+        function sum(arr) {
+            let result = 0
+
+            for (let num of arr)
+                result += num
+
+            return result
+        }
+
+        let a = 8
+        let b = 15
+        let arr = []
+
+        for (let num = a; num < b; ++num)
+            arr.push(num)
+
+        document.writeln(`Сумма значений от ${a} до ${b}: ${sum(arr)}<br>`)
+        document.writeln(`Четные значения от ${a} до ${b}: ${arr.filter(number => !(number % 2))}`)
+    </script>
+</body>
+</html>

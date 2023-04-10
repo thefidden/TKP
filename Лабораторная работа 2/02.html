@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Task 2</title>
+</head>
+<body>
+    <script type = "text/javascript">
+        function factorial(number) {
+            let result = 1
+
+            for(let a = number; a >= 1; --a)
+                result *= a
+
+            return result
+        }
+
+        document.writeln(`Количество возможных маршрутов обхода всех магазинов: ${factorial(10)}`)
+    </script>
+</body>
+</html>
