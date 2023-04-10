@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Task 1</title>
+    <script src = 'JS/functions.js'></script>
+    <script src = 'JS/Stack.js'></script>
+    <script src = 'JS/index.js'></script>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+<div class = 'Buttons'>
+    <button class = 'Button' onclick=insertButton(stack)>INSERT</button>
+    <button class = 'Button' onclick=extractButton(stack)>EXTRACT</button>
+</div>
+<div class = 'Text' id = 'Stack'>
+    <script type="text/javascript">
+        document.getElementById('Stack').innerHTML = `Стэк: ${stack.getItemsAsString()}`
+    </script>
+</div>
+<div class = 'Text' id = 'Elem'></div>
+</body>
+</html>
